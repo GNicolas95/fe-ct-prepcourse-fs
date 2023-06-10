@@ -87,11 +87,11 @@ function esDiezOCinco(num) {
    // Tu código:
    switch (num) {
       case 10:
-         return true;
+         return (true);
       case 5:
-         return true;
+         return (true);
       default:
-         return false; 
+         return (false); 
    }
 }
 
@@ -100,9 +100,9 @@ function estaEnRango(num) {
    // De lo contrario, retornar false.
    // Tu código:
    if (num < 50 && num > 20)
-      return true;
+      return (true);
    else 
-      return false;
+      return (false);
 }
 
 function esEntero(num) {
@@ -114,13 +114,13 @@ function esEntero(num) {
    // Tu código:
    switch (num) {
       case 0:
-         return true;
+         return (true);
       case 5:
-         return true;
+         return (true);
       case -20:
-         return true;
+         return (true);
       default:
-         return false;
+         return (false);
    }
 }
 
@@ -137,7 +137,7 @@ function fizzBuzz(num) {
    else if (num % 5 == 0)
       return ("buzz");
    else 
-      return false;
+      return (false);
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -157,7 +157,7 @@ function operadoresLogicos(num1, num2, num3) {
    else if (num1, num2, num3 == 0)
       return ("Error");
    else 
-      return false;
+      return (false);
 }
 
 function esPrimo(num) {
@@ -168,16 +168,16 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
    if (num < 2) {
-      return false;
+      return (false);
    }
       
    if (num >= 2) {
       for (let i = 2; i < num; i++) {
       if (num % i === 0) {
-         return false;
+         return (false);
       }  
    }
-         return true;
+         return (true);
    }
    
 }
@@ -198,9 +198,9 @@ function tieneTresDigitos(num) {
    // Caso contrario, retornar false.
    // Tu código:
    if (String(num).length === 3) 
-      return true;
+      return (true);
    else 
-      return false;
+      return (false);
 }
 
 function doWhile(num) {
@@ -213,7 +213,7 @@ function doWhile(num) {
         num = num + 5;
         veces++;
       }
-      return num;
+      return (num);
     
 }
 
