@@ -13,7 +13,7 @@ function esPositivo(num) {
    } else if (num < 0) {
       return "Es negativo";
    } else {
-      return false;
+      return (false);
    }
 }
 
@@ -71,20 +71,18 @@ function esVocal(letra) {
    // Tu código:
    if (letra == "a") 
       return ("Es vocal");
-    else if (letra == "e")
+    else if (letra == "e") 
       return ("Es vocal");
-    else if (letra == "i")
+    else if (letra == "i") 
       return ("Es vocal");
-    else if (letra == "o")
+    else if (letra == "o") 
       return ("Es vocal");
-    else if (letra == "u")
+    else if (letra == "u") 
       return ("Es vocal");
-    else if (letra == "el")
+    else if (letra == "el") 
       return ("Dato incorrecto");
-    else (letra == "c")
-      return ("Dato incorrecto");
-
-    
+    else (letra == "c") 
+      return ("Dato incorrecto");    
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
