@@ -31,7 +31,6 @@ function multiplica(x, y) {
    // Retorna el resultado de su multiplicación.
    // Tu código:
    return (x * y);
-
 }
 
 function obtenerResto(x, y) {

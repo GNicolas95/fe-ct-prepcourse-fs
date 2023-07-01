@@ -9,7 +9,7 @@ function sonIguales(x, y) {
       return (true);
    } else {
       return (false);
-   }
+   }    
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -20,7 +20,7 @@ function tienenMismaLongitud(str1, str2) {
       return (true);
    } else {
       return (false);
-   } 
+   }
 }   
 
 function menosQueNoventa(num) {
