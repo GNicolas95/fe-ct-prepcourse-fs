@@ -12,7 +12,7 @@ function invocarCallback(cb) {
    // Invoca/ejecuta el callback `cb`.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
-   cb ();
+   cb();
 }
 
 function operacionMatematica(num1, num2, cb) {
@@ -31,9 +31,9 @@ function sumarArray(arrayOfNumbers, cb) {
    // Tu código:
    var resultado = 0;
    for (var i = 0; i < arrayOfNumbers.length; i++) {
-      resultado += arrayOfNumbers[i];
+      resultado = resultado + arrayOfNumbers[i];
    }
-   cb(resultado);
+      cb(resultado); 
 }
 
 function forEach(array, cb) {
@@ -41,9 +41,9 @@ function forEach(array, cb) {
    // Debes iterar sobre el arreglo, y por cada elemento ejecutar el callback.
    // Debes pasarle el elemento como argumento al callback.
    // Tu código:
-   array.forEach(element => {
-      element = cb(element)
-   });
+   for (var i = 0; i < array.length; i++) {
+      cb(array[i]);
+   }
 }
 
 function map(array, cb) {
@@ -51,25 +51,24 @@ function map(array, cb) {
    // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
    // Retorna el nuevo arreglo.
    // Tu código:
-   var array2 = [];
-   array.map(element =>{
-      var resultado = cb(element);
-      array2.push(resultado)
-   })
-      return (array2);
+   var newArray = [];
+   for (var i = 0; i < array.length; i++) {
+      newArray.push(cb(array[i]));
+   }
+      return (newArray);
 }
 
 function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
-   var newArray = [];
-   for (i = 0; i < arrayOfStrings.length; i++) {
-      if (arrayOfStrings[i].charAt(0) === "a") {
-         newArray.push(arrayOfStrings[i])
-      }          
-   }  
-      return (newArray);
+   var result = [];
+   for (var i = 0; i < arrayOfStrings.length; i++) {
+      if (arrayOfStrings[i][0] === "a") {
+         result.push(arrayOfStrings[i]);
+      }
+   }
+      return (result);
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
