@@ -22,13 +22,12 @@ class Persona {
    }
 }
 
-
 function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
    // En este ejercicio debes crear una instancia de la clase construida en el ejercicio anterior.
    // Recibirás las propiedades por parámetro.
    // Retornar la instancia creada.
    // Tu código:
-   var newPerson = new Persona ("Ruben", "Valverde", 28, "España 763");
+   var newPerson = new Persona (nombre, apellido, edad, domicilio);
       return (newPerson);
 }
 
