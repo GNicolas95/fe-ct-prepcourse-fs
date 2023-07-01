@@ -8,13 +8,14 @@ function crearGato(nombre, edad) {
    // Retornar el objeto.
    // Tu código:
    var newGato = {
-      nombre: nombre, 
+      nombre: nombre,
       edad: edad,
-      meow: function() {
+      meow: function () {
          return ("Meow!");
       }
-   }     
-         return (newGato);
+   }
+      return (newGato);
+
 }
 
 function nuevoUsuario(nombre, email, password) {
@@ -26,7 +27,7 @@ function nuevoUsuario(nombre, email, password) {
       nombre: nombre,
       email: email,
       password: password,
-   } 
+   }
       return (newUsuario);
 }
 
@@ -60,7 +61,7 @@ function eliminarPropiedad(objeto, propiedad) {
    // Debes eliminarla del objeto y retornarlo finalmente.
    // Tu código:
    delete objeto[propiedad];
-   return (objeto);
+      return (objeto);
 }
 
 function tieneEmail(objetoUsuario) {
@@ -69,7 +70,7 @@ function tieneEmail(objetoUsuario) {
    // Tu código:
    if (objetoUsuario.email) {
       return (true);
-   }  else {
+   } else {
       return (false);
    }
 }
@@ -80,7 +81,7 @@ function tienePropiedad(objeto, propiedad) {
    // Tu código:
    if (objeto.hasOwnProperty(propiedad)) {
       return (true);
-   }  else {
+   } else {
       return (false);
    }
 }
@@ -89,9 +90,9 @@ function verificarPassword(objetoUsuario, password) {
    // Verifica si la propiedad "password" del "objetoUsuario" coincide con el parámetro "password".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   if (password === objetoUsuario.password) {
+   if (objetoUsuario.password === password) {
       return (true);
-   }  else {
+   } else {
       return (false);
    }
 }
@@ -102,7 +103,7 @@ function actualizarPassword(objetoUsuario, nuevaPassword) {
    // Retornar el objeto.
    // Tu código:
    objetoUsuario.password = nuevaPassword;
-   return (objetoUsuario);
+      return (objetoUsuario);
 }
 
 function agregarAmigo(objetoUsuario, nuevoAmigo) {
@@ -111,7 +112,7 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
    // Retornar el objeto.
    // Tu código:
    objetoUsuario.amigos = [nuevoAmigo];
-   return (objetoUsuario);
+      return (objetoUsuario);
 }
 
 function pasarUsuarioAPremium(objetoMuchosUsuarios) {
@@ -120,7 +121,7 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Define esta propiedad de todos los usuarios como true.
    // Retornar el arreglo.
    // Tu código:
-   for (var i in objetoMuchosUsuarios) {
+   for (var i = 0; i < objetoMuchosUsuarios.length; i++) {
       objetoMuchosUsuarios[i].esPremium = true;
    }
       return (objetoMuchosUsuarios);
@@ -132,11 +133,11 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Cada post posee una propiedad llamada "likes". Esta propiedad es un número.
    // Debes sumar los likes de todos los post y retornar el resultado.
    // Tu código:
-   var numLikes = 0; 
-   for (var i = 0; i < objetoUsuario.posts.length; i++) { 
-     numLikes = objetoUsuario.posts[i].likes + numLikes; 
+   var sumLikes = 0;
+   for (var i = 0; i < objetoUsuario.posts.length; i++) {
+      sumLikes = objetoUsuario.posts[i].likes + sumLikes;
    } 
-      return (numLikes);
+      return (sumLikes);
 }
 
 function agregarMetodoCalculoDescuento(objetoProducto) {
@@ -151,10 +152,11 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    // Precio final ---> 8
    // Tu código:
    objetoProducto.calcularPrecioDescuento = function() {
-   var precioFinal = objetoProducto.precio - (objetoProducto.precio * objetoProducto.porcentajeDeDescuento);
-      return (precioFinal);
+      var precioFinal = objetoProducto.precio - (objetoProducto.precio * objetoProducto.porcentajeDeDescuento);
+         return (precioFinal);
    }  
       return (objetoProducto);
+      
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
