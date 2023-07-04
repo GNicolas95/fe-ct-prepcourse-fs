@@ -216,23 +216,22 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código: 
-   var sumDos = [];
-   var bucle = num;
+   var sumaDos = [];
+
    for (var i = 0; i < 10; i++) {
-      bucle = bucle + 2;
-      if (bucle === i) {
+      num = num + 2;
+      sumaDos.push(num);
+      if (num === i) {
          break;
-      } else { 
-         sumDos.push(bucle);
-      } 
-   }  
+      }
+   }
       if (i < 10) {
-         return ("Se interrumpió la ejecución");
+         return "Se interrumpió la ejecución";
       } else {
-         return (sumDos);
-      } 
-      
+         return sumaDos;
+      }
 }
+
 
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
